@@ -1,12 +1,9 @@
 version: "3"
 services:
-  eventbath:
-    image: cinema-service
-    build: .
   zookeeper:
     image: wurstmeister/zookeeper
     ports:
-      - "2181:2181"
+      - 2181:2181
   kafka:
     image: wurstmeister/kafka:1.1.0
     ports:
